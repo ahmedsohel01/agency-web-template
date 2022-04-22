@@ -1,0 +1,138 @@
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container {
+    width: 960px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container {
+    width: 720px;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+  nav ul li {
+    padding: 30px 15px;
+  }
+  .banner-content h1 {
+    font-size: 50px;
+  }
+  .banner-content p {
+    width: 70%;
+  }
+  .services-area,
+  .portfolio-content,
+  .team-members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial-content {
+    max-width: 90%;
+  }
+  .slider__btn--left {
+    left: 3%;
+  }
+  .slider__btn--right {
+    right: 3%;
+  }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    width: 540px;
+    padding: 0 18px;
+    margin: 0 auto;
+  }
+  .navigation-area {
+    padding: 15px 0;
+  }
+  /* Mobile Menu */
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #49cbcd;
+    box-shadow: 0px 0px 10px 0px #49cbcd80;
+    z-index: 111;
+  }
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul.active {
+    left: 0;
+  }
+  /* Mobile Menu */
+  .banner-content h1 {
+    font-size: 40px;
+  }
+  .banner-content p {
+    width: 90%;
+  }
+  .service-icon {
+    height: 80px;
+    width: 80px;
+    line-height: 90px;
+  }
+  .service-icon i {
+    font-size: 30px;
+  }
+  .service-content {
+    margin-top: 20px;
+  }
+  .member-avatar img {
+    width: 180px;
+  }
+  .member-info {
+    margin-top: 20px;
+  }
+  .planing-area,
+  .contact-area {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .services-area,
+  .portfolio-content,
+  .team-members {
+    grid-template-columns: 1fr;
+  }
+  .contact-form form {
+    display: block;
+  }
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
